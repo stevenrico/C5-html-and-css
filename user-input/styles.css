@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: sans-serif;
+}
+
+/* LAYOUT STYLES */
+
+.one-column-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.two-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.gap-md {
+  gap: 8px;
+}
+
+.center-wrapper {
+  max-width: 600px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.stack > * + * {
+  margin-top: 32px;
+}
+
+input,
+select {
+  padding: 4px 8px;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.block-section label,
+.block-section input {
+  width: 100%;
+
+  display: block;
+}
+
+.block-section label {
+  margin-bottom: 8px;
+}

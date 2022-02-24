@@ -11,26 +11,24 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
+    <form class="center-wrapper stack">
       <h1>Register Form</h1>
-      <label for="username">Username</label>
-      <input
-        type="text"
-        name="username"
-        minlength="4"
-        maxlength="16"
-        id="username"
-        required
-      />
+      <div class="one-column-grid gap-md">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          minlength="4"
+          maxlength="16"
+          id="username"
+          required
+        />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
 
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" />
-
-      <label>
-        Password:
-        <input type="password" name="password" />
-      </label>
-
+        <label for="password"> Password: </label>
+        <input type="password" name="password" id="password" />
+      </div>
       <section>
         <h2>What role are you looking for:</h2>
         <input
@@ -59,24 +57,34 @@
         <label for="none">None</label>
       </section>
 
-      <label for="resume">Please upload your resume:</label>
-      <input type="file" name="resume" id="resume" />
+      <div class="one-column-grid gap-md">
+        <label for="resume">Please upload your resume:</label>
+        <input type="file" name="resume" id="resume" />
+      </div>
 
-      <label for="years-exp">How many years of experience:</label>
-      <input type="number" min="5" name="years-exp" id="years-exp" />
+      <div class="block-section">
+        <label for="years-exp">How many years of experience:</label>
+        <input type="number" min="5" name="years-exp" id="years-exp" />
+      </div>
 
-      <label for="start-date">When can you start:</label>
-      <input type="date" name="start-date" id="start-date" />
+      <div class="one-column-grid gap-md">
+        <label for="start-date">When can you start:</label>
+        <input type="date" name="start-date" id="start-date" />
+      </div>
 
-      <label for="city">Which city do you live in:</label>
-      <select name="city" id="city" required>
-        <option value="">Please Select...</option>
-        <option value="london">London</option>
-        <option value="bristol">Bristol</option>
-      </select>
+      <div class="one-column-grid gap-md">
+        <label for="city">Which city do you live in:</label>
+        <select name="city" id="city" required>
+          <option value="">Please Select...</option>
+          <option value="london">London</option>
+          <option value="bristol">Bristol</option>
+        </select>
+      </div>
 
-      <input type="checkbox" name="terms" id="terms" />
-      <label for="terms">I accept the <a>Terms & Conditons</a>.</label>
+      <div>
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms">I accept the <a>Terms & Conditons</a>.</label>
+      </div>
 
       <button type="submit">Sign In</button>
     </form>
