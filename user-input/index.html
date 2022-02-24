@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h1>Register Form</h1>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+
+      <label>
+        Password:
+        <input type="password" name="password" />
+      </label>
+
+      <section>
+        <h2>What role are you looking for:</h2>
+        <input
+          type="radio"
+          name="dev-role"
+          id="frontend"
+          value="frontend"
+        />
+        <label for="frontend">Frontend</label>
+        <input type="radio" name="dev-role" id="backend" value="backend" />
+        <label for="backend">Backend</label>
+        <input
+          type="radio"
+          name="dev-role"
+          id="fullstack"
+          value="fullstack"
+        />
+        <label for="fullstack">Fullstack</label>
+        <input
+          type="radio"
+          name="dev-role"
+          id="none"
+          value="none"
+          checked
+        />
+        <label for="none">None</label>
+      </section>
+
+      <label for="resume">Please upload your resume:</label>
+      <input type="file" name="resume" id="resume" />
+
+      <label for="start-date">When can you start:</label>
+      <input type="date" name="start-date" id="start-date" />
+
+      <label for="city">Which city do you live in:</label>
+      <select name="city" id="city">
+        <option value="">Please Select...</option>
+        <option value="london">London</option>
+        <option value="bristol">Bristol</option>
+      </select>
+
+      <input type="checkbox" name="terms" id="terms" />
+      <label for="terms">I accept the <a>Terms & Conditons</a>.</label>
+
+      <button type="submit">Sign In</button>
+    </form>
+  </body>
+</html>
