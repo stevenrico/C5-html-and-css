@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* LAYOUT STYLES */
+
+.center-grid {
+  display: grid;
+  place-items: center;
+}
+
+/* MAIN STYLES */
+
+.gallery {
+  height: 100vh;
+}
+
+.wrapper {
+  /* position: relative; */
+
+  padding: 32px;
+}
+
+.frame {
+  position: relative;
+}
+
+.frame .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+
+  font-size: 96px;
+  color: goldenrod;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  background-color: lightseagreen;
+  opacity: 0.6;
+}
